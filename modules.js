@@ -1,0 +1,14 @@
+E.modules = [
+ {id:'E0',name:'The Cellars of Thornwick',town:'Thornwick',entrance:'Briar Gate',dungeons:['The Lantern Cellars','The Rootwater Cistern','The Cinder Crypt'],boss:'cinder-reeve',giver:'Warden Elspeth',main:'Recover the stolen watchfire from the Cinder Reeve beneath the old storehouse.',side:'Recover the lamplighter’s ledger from a cellar alcove.',intro:'The watchfire has gone cold. Something is moving beneath the storehouse.'},
+ {id:'E1',name:'The Hollow Vaults',town:'Dunmere',entrance:'The Sunken Causeway',dungeons:['The Drowned Archive','The Bellfoundry','The Hollow Vault'],boss:'bell-wraith',giver:'Archivist Anwen',main:'Silence the Bell Wraith before its next toll floods Dunmere.',side:'Recover the missing ferry rolls.',intro:'At dusk a bell rings from a tower that sank a hundred years ago.'},
+ {id:'E2',name:'Barrow of the Iron King',town:'Kestrel Ford',entrance:'Crowstone Ridge',dungeons:['The Cairn Road','The Broken Guardroom','The Iron Court','The King’s Barrow'],boss:'iron-king',giver:'Captain Vey',main:'Put the Iron King to rest and return his seal to the ford.',side:'Bring back the names of the missing guards.',intro:'The ferrymen have seen armoured shapes waiting on the far bank.'},
+ {id:'E3',name:'The Witch-Queen of Ravenmoor',town:'Mallowcross',entrance:'Ravenmoor Steps',dungeons:['The Rookery','The Sable Gallery','The Thorn Chapel','The Queen’s Solar'],boss:'moor-queen',giver:'Sister Oriel',main:'Break the Witch-Queen’s moorlight covenant.',side:'Recover the chapel register from the abandoned vestry.',intro:'The moor lights are burning at noon. Three shepherds have already followed them.'}
+];
+
+const writtenClues=[
+ ['A line in chalk reads “Keep the north lamp fed. The roots move in darkness.”','A wicker basket holds the warden’s old watch badge. A trail of wet roots leads down.','Six lamp hooks stand empty. The reeve has hung the last lamp over the stair.'],
+ ['The bell keeper recorded three tolls. The third is marked in a hand too shaky to read.','Someone wedged felt around the clapper. The felt is torn into strips.','A ferry token lies on a plate beside the vault. Anwen’s name is scratched on its rim.'],
+ ['The cairn stones bear the names of soldiers from both banks of the river.','The guardroom brazier is cold. Iron filings lead through the doorway.','A witness carved a river oath into a column. The king’s seal is missing from the stone.','A sword lies across the burial stones. It is unsharpened, with a ferry toll cut into the hilt.'],
+ ['Feathers tumble from the rookery rafters. Each has a thread of blue silk tied to its quill.','A portrait shows Oriel beside a figure whose face was painted over.','Candle wax seals the chapel register’s empty lectern. The queen’s name is written underneath.','The queen’s window looks out on a procession of lamps going steadily deeper into the fen.']
+];
+E.modules.forEach((mod,i)=>{mod.clues=writtenClues[i];});
